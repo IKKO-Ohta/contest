@@ -43,7 +43,6 @@ int bfs(){
 	d[sx][sy] = 0;
 
 	while(que.size()){
-		d[x][y] = dis;
 		P p = que.front(); que.pop(); //マクロ
 
 		if (p.first == gx && p.second == gy) break;
