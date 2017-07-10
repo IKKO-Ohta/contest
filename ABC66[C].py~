@@ -1,5 +1,3 @@
-# coding: utf-8
-
 from collections import deque
 """
 pythonには両端キューがあります。
