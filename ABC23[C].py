@@ -1,3 +1,4 @@
+
 from operator import itemgetter
  
 nums = [int(x) for x in input().split()]
@@ -6,7 +7,11 @@ N = int(input())
  
 Sx = [0 for i in range(R)]
 Sy = [0 for i in range(C)]
- 
+
+'''
+thanks to:
+http://abc023.contest.atcoder.jp/submissions/1321118
+''' 
 if __name__ == '__main__':
  
     L = []
@@ -16,6 +21,7 @@ if __name__ == '__main__':
         L.append((r,c))
         Sx[r] += 1
         Sy[c] += 1
+
         
     Sx2 = sorted([(j,i) for i,j in enumerate(Sx) if j <= K], key = itemgetter(0))
     Sy2 = sorted([(j,i) for i,j in enumerate(Sy) if j <= K], key = itemgetter(0), reverse=1)
